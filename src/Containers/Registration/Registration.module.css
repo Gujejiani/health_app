@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.Section {
+    width: 100vw;
+    height: 100vh;
+    background: url("https://i.ibb.co/g90JTkv/pexels-elijah-o-donnell-5098976.jpg") no-repeat center 05px/cover;
+
+}
+
+.Container {
+    width: 400px;
+    height: 500px;
+    background-color: #1b3844;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+
+}
+
+.Container label {
+    display: block;
+    padding: 10px;
+    color: white;
+}
+
+.Container input {
+    padding: 5px 0;
+    width: 300px;
+    height: 30px;
+}
+
+.Section h1 {
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 150px;
+    font-size: 40px;
+}
+
+.InputNotValid {
+    border: none;
+
+}
+
+.InputNotValid:focus {
+
+    border: solid rgb(255, 39, 39);
+}
+
+.InputValid {
+    border: none;
+}
+
+.InputValid:focus {
+
+    border: solid 5px rgb(155, 251, 184);
+}
+
+.ErorMessage {
+    position: absolute;
+    color: rgb(163, 108, 108);
+    font-size: 15px;
+    top: 230px;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+@media screen and (max-height: 400px) {
+    .Section {
+        height: 300vh;
+    }
+
+    .Container {
+
+        top: 230px;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .ErorMessage {
+        top: 80px
+    }
+
+    .Container {
+        width: 300px;
+        top: 150px;
+    }
+
+    .Container label {
+        display: block;
+        padding: 10px;
+        color: white;
+    }
+
+    .Container input {
+        padding: 5px 0;
+        width: 200px;
+        height: 30px;
+    }
+
+}

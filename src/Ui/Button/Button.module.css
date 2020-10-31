@@ -1,0 +1,28 @@
+.Button{
+    width: 200px;
+    height: 40px;
+    background-color: #105c38;
+    color: white;
+    display: block;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 20px;
+}
+.Button:hover{
+    background-color: #5ad69c;
+}
+.ButtonOf{
+    width: 200px;
+    height: 40px;
+    background-color: #616463;
+    color: white;
+    display: block;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 20px; 
+    cursor: not-allowed;
+}

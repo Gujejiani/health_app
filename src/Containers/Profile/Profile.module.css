@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Container {
+   
+    background: url("https://i.ibb.co/z6yQ9M5/pexels-li-sun-2294361.jpg") no-repeat center center/cover; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  
+    width: 100vw;
+    height: 100vh;
+
+  
+ 
+    
+ 
+}
+
+
+
+
+
+
+/* link style */
+
+.Active{
+ 
+    text-decoration: none;
+  
+    color: seagreen;
+    padding: 10px;
+    flex: 1;
+
+}
+
+
+.ViewerBack{
+    background-color: black;
+    position: absolute;
+    width: 70%;
+    height: 500px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 250px;
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+h3{
+    color: white;
+    text-align: right;
+    margin-right: 25px;
+    padding: 10px;
+    font-size: 25px;
+}
+.ViewerBack p{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    margin: 20px;
+    padding: 5px;
+}
+.FlexBox{
+ 
+    display: flex;
+    color: #237923;
+    text-align: center;
+    justify-content: center;
+   text-align: center;
+   width: 500px;
+  
+}
+.FlexBox h2{
+ 
+    margin-top: 50px;
+
+   font-size: 30px;
+}
+.FlexBox h2:hover{
+    cursor: pointer;
+    color: wheat;
+}
+
+ /*სიგრძე და სიგანე გქონდა ამაზე მიცემული და მობაილში აურევდა გადახედე და გაასწორე */
+.Flexarea{    
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+   
+}
+.Flexarea h1{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    color: #237923;
+    margin-top: 50px;
+    padding: 10px 0;
+}
+.Flexarea h1:hover{
+    cursor: pointer;
+    color: wheat;
+}
+@media (max-height: 410px){
+    .ViewerBack{
+      
+       top: 0px;
+       
+       height: 100%;
+       
+    }
+    .Dashboard{
+        position: relative;
+        top: -50px ;
+    }
+
+    .FlexBox h2{
+        flex: 1;
+        margin-top: 50px;
+        width: 30px;
+       font-size: 25px;
+    }
+    .Flexarea{
+        width: 90%;
+        top: 189px
+
+    }
+    
+}
+
+
+
+
+@media (max-width: 500px){
+   
+   
+    .FlexBox h2{
+        flex: 1;
+        margin-top: 50px;
+        width: 30px;
+       font-size: 20px;
+    }
+  
+    .ViewerBack p{
+      
+        font-size: 15px;
+  
+       
+    }
+    h3{
+        font-size: 20px;
+    }
+    .ViewerBack{
+        width: 100%;
+        height: 100%;
+            opacity: 0.8;
+       top: 0;
+
+    }
+
+        /* controls everything  expect background */
+    .MobileAlign{
+        position: absolute;
+        top: 130px;
+        width: 100%;
+       
+    }
+   
+    .FlexBox{
+        width: 270px;
+        margin-left: 10px;
+      
+    }
+   
+  
+}
+
