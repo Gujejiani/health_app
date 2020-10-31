@@ -12,8 +12,14 @@ let table = null
 let id = 0
 let totalCalories = 0;
 let totalCl = []
-const data = JSON.parse(localStorage.getItem('userInfo')) //geting data from local storage
-let desiredActivity = parseInt(data.activity)
+
+
+let data = {
+    activity: 1200
+}
+
+
+let desiredActivity = data.activity
 
 class Activity extends Component {
     state = {
@@ -27,6 +33,16 @@ class Activity extends Component {
 
     }
 
+    componentDidMount() {
+
+        if (localStorage.getItem('userInfo')) {
+            data = JSON.parse(localStorage.getItem('userInfo')) //geting data from local storage
+            desiredActivity = parseInt(data.meal)
+        }
+
+        // 
+        console.log(desiredActivity)
+    }
 
 
     //counting burned calories  from kilometres

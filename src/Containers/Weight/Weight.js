@@ -134,8 +134,17 @@ class Weight extends Component {
     }
 
     render() {
-        const data = JSON.parse(localStorage.getItem('userInfo'))
+        let data = {
+            weight: 70
+        }
         let desiredWeight = parseInt(data.weight)
+        if (localStorage.getItem('userInfo')) {
+            data = JSON.parse(localStorage.getItem('userInfo'))
+            desiredWeight = data.weight
+        }
+
+
+
         label = (
             <div>
                 {this.state.inputArray.map(key => (

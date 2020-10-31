@@ -11,7 +11,15 @@ let meal = []
 let table = null
 let id = 0
 let totalCalories = 0;
-const data = JSON.parse(localStorage.getItem('userInfo')) //geting data from local storage
+
+
+
+
+
+let data = {
+    meal: 90
+}
+
 let desiredMeal = parseInt(data.meal)
 
 class Meal extends Component {
@@ -25,7 +33,16 @@ class Meal extends Component {
 
     }
 
+    componentDidMount() {
 
+        if (localStorage.getItem('userInfo')) {
+            data = JSON.parse(localStorage.getItem('userInfo')) //geting data from local storage
+            desiredMeal = parseInt(data.meal)
+        }
+
+        // 
+        console.log(desiredMeal)
+    }
 
     //counting burned calories  from kilometres
 

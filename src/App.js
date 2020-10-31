@@ -16,13 +16,13 @@ class App extends Component {
         <Switch>
 
 
-          {this.props.token ? <Route exact path="/profile" component={Profile} /> : null}
-          {this.props.token ? <Route path="/profile/dashboard" component={Dashborad} /> : null}
-          {this.props.token ? <Route path="/weight" component={Weight} /> : null}
-          {this.props.token ? <Route path="/activity" component={Activity} /> : null}
-          {this.props.token ? <Route path="/meal" component={Meal} /> : null}
-          <Route path="/registration" component={Registration} />
-          <Route exact path="/" component={Login} />
+          {this.props.token ? <Route exact path="/health-app/profile" component={Profile} /> : null}
+          {this.props.token ? <Route path="/health-app/profile/dashboard" component={Dashborad} /> : null}
+          {this.props.token ? <Route path="/health-app/weight" component={Weight} /> : null}
+          {this.props.token ? <Route path="/health-app/activity" component={Activity} /> : null}
+          {this.props.token ? <Route path="/health-app/meal" component={Meal} /> : null}
+          <Route path="/health-app/registration" component={Registration} />
+          <Route exact path="/health-app/" component={Login} />
           <Route component={Login} />
 
 

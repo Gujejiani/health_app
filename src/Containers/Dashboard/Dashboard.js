@@ -11,9 +11,7 @@ import Table from '../../Components/Table/Table'
 let table = null
 
 
-const totalActCalories = JSON.parse(localStorage.getItem('ACTIVITY')) //geting data from local storage
-const totalMeal = JSON.parse(localStorage.getItem('totalMeal')) //geting data from local storage
-const currentWeight = JSON.parse(localStorage.getItem('currentWeight'))
+
 
 
 class Dashboard extends Component {
@@ -26,6 +24,7 @@ class Dashboard extends Component {
     }
 
 
+
     logOut = () => {
         this.props.logout()
 
@@ -33,6 +32,27 @@ class Dashboard extends Component {
 
 
     componentDidMount() {
+
+
+        let totalActCalories = [
+            { id: "3", date: 2020 / 20 / 20, totalCalories: 300 }
+        ]
+        let totalMeal = [{ "date": "2020/10/13", "meal": 700 }, { "date": "2020/10/13", "meal": 1121 }]
+
+
+        let currentWeight = [{ "id": 1, "date": "2020/10/20", "weight": "80" }, { "id": 2, "date": "2020/10/21", "weight": "91" }]
+
+        if (localStorage.getItem('ACTIVITY')) {
+            totalActCalories = JSON.parse(localStorage.getItem('ACTIVITY'))
+        }; //geting data from local storage
+
+        if (localStorage.getItem('totalMeal')) {
+        };
+
+        if (localStorage.getItem('currentWeight')) {
+            currentWeight = JSON.parse(localStorage.getItem('currentWeight'))
+        }
+        console.log(localStorage.getItem('currentWeight'))
 
         let weight = Array.from(currentWeight)
         setTimeout(() => {
@@ -79,6 +99,7 @@ class Dashboard extends Component {
 
         let inputedData = []
 
+
         weight.map(x => {
             inputedData.push({
                 date: x.date,
@@ -93,18 +114,22 @@ class Dashboard extends Component {
             inputArray: inputedData
         })
 
+
     }
 
 
 
 
     render() {
+
+        let id = 0
         table = (
-            <div>
+            <div key={'key'} >
+
                 {this.state.inputArray.map(key => (
 
 
-                    <Table date={key.date} cancel={classes.Cancel} type={key.weight} distance={key.meal ? key.meal : 0} key={1 + 1} cl={key.activity ? key.activity : 0} val={'cl'} click={() => this.deleteHandler(key.id, key.calories)} />
+                    <Table date={key.date} cancel={classes.Cancel} type={key.weight} distance={key.meal ? key.meal : 0} key={Math.random()} cl={key.activity ? key.activity : 0} val={'cl'} click={() => this.deleteHandler(key.id, key.calories)} />
 
 
 
