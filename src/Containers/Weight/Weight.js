@@ -6,7 +6,7 @@ import * as actions from '../../store/actions/index'
 import DataPicker from '../../Components/DatePicker/DatePicker'
 import Button from '../../Ui/Button/Button'
 import { connect } from 'react-redux'
-
+import Img from '../../assets/img/can.JPG'
 
 
 let label = null
@@ -150,7 +150,7 @@ class Weight extends Component {
                 {this.state.inputArray.map(key => (
 
                     key.date && key.weight ?
-                        <div className={classes.TableHolder} key={key.id} ><span className={classes.span} >Date:    {key.date} </span>  Weight: <span key={key.id + 3} className={parseInt(key.weight) <= desiredWeight ? classes.Green : classes.Red} > {key.weight} kg  </span>   <img alt="" onClick={() => this.deleteHandler(key.id)} className={classes.Img} src={require('../../assets/img/cancel.JPG')} /> </div> : null //mapping date and weight values
+                        <div className={classes.TableHolder} key={key.id} ><span className={classes.span} >Date:    {key.date} </span>  Weight: <span key={key.id + 3} className={parseInt(key.weight) <= desiredWeight ? classes.Green : classes.Red} > {key.weight} kg  </span>   <img alt="" onClick={() => this.deleteHandler(key.id)} className={classes.Img} src={Img} /> </div> : null //mapping date and weight values
 
                 ))}
             </div>
@@ -161,7 +161,9 @@ class Weight extends Component {
         return (
 
             <div>
+
                 <Heder logout={this.logOut} token={this.props.token} />
+
                 <h1 className={classes.h1} >Enter the form to see the list</h1>
                 <div className={classes.Background}>
                     <div className={classes.Container}>

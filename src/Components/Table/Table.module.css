@@ -1,62 +1,66 @@
-
-
-.Table{
+.Table {
 
     position: relative;
     top: 90px;
     margin: auto;
     border: 3px solid rgb(23, 76, 119);
     background-color: rgb(10, 51, 48);
-   width: 83%;
-   margin-top: -30px;
-   
-   display: flex;
-  text-align: center;
-  
+    width: 83%;
+    margin-top: -30px;
+
+    display: flex;
+    text-align: center;
+
 }
-.Table span{
-    border-right:  3px solid rgb(23, 76, 119);
+
+.Table span {
+    border-right: 3px solid rgb(23, 76, 119);
     flex: 1;
     padding: 5px;
 }
 
-.Cancel{
+.Cancel {
     width: 25px;
-   
+
     position: relative;
     left: 262px;
     top: 50px;
 
 }
-.Table .Last{
+
+.Table .Last {
     border-right: none;
-   
-   
+
+
 }
-@media(max-width: 500px){
-    .Table{
+
+@media(max-width: 500px) {
+    .Table {
         font-size: 11px;
         width: 290px;
-        
-        
+
+
     }
-    .Cancel{
+
+    .Cancel {
         width: 25px;
-       
+
         position: relative;
         left: 160px;
         top: 60px;
-        
-    
+
+
     }
 }
-@media (max-width: 321px){
-    .Table{
+
+@media (max-width: 321px) {
+    .Table {
         width: 250px;
         font-size: 10px;
-    
+
     }
-    .Cancel{
+
+    .Cancel {
         left: 130px;
         width: 10px;
         height: 10px;

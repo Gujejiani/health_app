@@ -119,7 +119,7 @@ class Dashboard extends Component {
     }
 
 
-
+    //cancel={classes.Cancel}
 
     render() {
 
@@ -130,7 +130,7 @@ class Dashboard extends Component {
                 {this.state.inputArray.map(key => (
 
 
-                    <Table date={key.date} cancel={classes.Cancel} type={key.weight} distance={key.meal ? key.meal : 0} key={Math.random()} cl={key.activity ? key.activity : 0} val={'cl'} click={() => this.deleteHandler(key.id, key.calories)} />
+                    <Table date={key.date} visibility={classes.visib} type={key.weight} distance={key.meal ? key.meal : 0} key={Math.random()} cl={key.activity ? key.activity : 0} val={'cl'} click={() => this.deleteHandler(key.id, key.calories)} />
 
 
 
