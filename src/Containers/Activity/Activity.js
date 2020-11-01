@@ -40,8 +40,7 @@ class Activity extends Component {
             desiredActivity = parseInt(data.meal)
         }
 
-        // 
-        console.log(desiredActivity)
+
     }
 
 
@@ -142,7 +141,7 @@ class Activity extends Component {
             }
         })
 
-        console.log(this.state.inputArray)
+
     }
 
 
@@ -179,7 +178,7 @@ class Activity extends Component {
     storageSubmittedHandler = () => {
 
 
-        console.log(this.state.inputArray)
+
         totalCl.push({
             date: this.state.newDate,
             activityCl: totalCalories

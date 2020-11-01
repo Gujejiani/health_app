@@ -40,8 +40,7 @@ class Meal extends Component {
             desiredMeal = parseInt(data.meal)
         }
 
-        // 
-        console.log(desiredMeal)
+
     }
 
     //counting burned calories  from kilometres
@@ -115,7 +114,6 @@ class Meal extends Component {
 
         const inputArray = this.state.inputArray
 
-        console.log(totalCalories)
 
 
         const updatedInputArray = inputArray.filter(x => x.id !== e) //deleting clicked input from the state

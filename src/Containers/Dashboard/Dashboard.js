@@ -52,11 +52,11 @@ class Dashboard extends Component {
         if (localStorage.getItem('currentWeight')) {
             currentWeight = JSON.parse(localStorage.getItem('currentWeight'))
         }
-        console.log(localStorage.getItem('currentWeight'))
+
 
         let weight = Array.from(currentWeight)
         setTimeout(() => {
-            console.log(this.state.inputArray)
+
         }, 2000)
 
 
@@ -89,7 +89,7 @@ class Dashboard extends Component {
             })
         ))
 
-        console.log(weight)
+
         currentWeight.map(key => (
             inputArray.push(
                 {
@@ -108,7 +108,8 @@ class Dashboard extends Component {
                 activity: x.activity
             })
         })
-        console.log(inputedData)
+
+
 
         this.setState({
             inputArray: inputedData

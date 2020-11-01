@@ -70,11 +70,11 @@ class Weight extends Component {
 
     submitHandler = (e) => {
 
-        //const dateAllow = this.state.newDate "FIXME" ერთი და იგივე თარიღი რო არ შევიდეს ორჯერ
+
 
         e.preventDefault()
 
-        //console.log(dateAllow ===this.state.newDate )
+
 
         const array = this.state.inputArray
 
