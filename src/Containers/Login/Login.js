@@ -61,7 +61,7 @@ class Login extends Component {
 
 
         if (form !== <Spiner /> && this.props.token) {
-            this.props.history.push('/profile')
+            this.props.history.push('/health-app/profile')
         }
 
 

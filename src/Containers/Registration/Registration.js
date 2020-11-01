@@ -165,9 +165,10 @@ class Registration extends Component {
 
 
 
-        this.props.onSubmit(userInfo) // giving data tu reducer
+        this.props.onSubmit(userInfo); // giving data tu reducer
 
-        this.props.userRegistered(this.state.formControls.email.value, this.state.formControls.password.value, this.state.isLogined, userInfo) //
+        this.props.userRegistered(this.state.formControls.email.value, this.state.formControls.password.value, this.state.isLogined, userInfo);
+
         this.setState((prewState) => ({
             isLogined: !prewState.isLogined
         }))
@@ -269,7 +270,7 @@ class Registration extends Component {
 
                 </section>
 
-                {this.props.token ? <Redirect to="/" /> : null}
+                {this.props.token ? <Redirect to="/health-app/profile" /> : null}
 
             </div>
         )

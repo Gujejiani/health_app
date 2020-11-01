@@ -35,14 +35,14 @@ class Profile extends Component {
                             <p> Desired Activity Calories per day: {data.activity} cl </p>
                             <div className={classes.Flexarea} >
                                 <div className={classes.FlexBox}>
-                                    <NavLink className={classes.Active} to="/weight" > <h2>Weight</h2></NavLink>
-                                    <NavLink className={classes.Active} to='/activity'  ><h2>Activity</h2></NavLink>
-                                    <NavLink className={classes.Active} to='/meal'>  <h2>Meal</h2></NavLink>
+                                    <NavLink className={classes.Active} to="/health-app/weight" > <h2>Weight</h2></NavLink>
+                                    <NavLink className={classes.Active} to='/health-app/activity'  ><h2>Activity</h2></NavLink>
+                                    <NavLink className={classes.Active} to='/health-app/meal'>  <h2>Meal</h2></NavLink>
 
 
                                 </div>
                                 <div className={classes.Dashboard}>
-                                    <NavLink to='/profile/dashboard'  >  <h1>Dashboard</h1></NavLink>
+                                    <NavLink to='/health-app/profile/dashboard'  >  <h1>Dashboard</h1></NavLink>
                                 </div>
 
                             </div>
