@@ -252,6 +252,9 @@ class Registration extends Component {
             errorMessage = "Sorry this Email is already Exists, please Sign In"
 
         }
+        if (this.props.token) {
+            errorMessage = <span className={classes.Succes}> {"Registration complited, Please Login"}</span>
+        }
 
 
         return (
@@ -270,7 +273,7 @@ class Registration extends Component {
 
                 </section>
 
-                {this.props.token ? <Redirect to="/health-app/profile" /> : null}
+
 
             </div>
         )

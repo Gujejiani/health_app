@@ -16,7 +16,7 @@ const heder = (props) => {
 
 
             {props.token ? <Link to="/health-app/" className={classes.link} >     <li onClick={props.logout} className={classes.Register} >Log Out</li></Link> : <Link to="/health-app/registration" className={classes.link} >     <li className={classes.Register} >Register</li></Link>}
-
+   
           </ul>
         </nav>
 

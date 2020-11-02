@@ -89,12 +89,13 @@
 
 @media screen and (max-width: 500px) {
     .ErorMessage {
-        top: 80px
+        top: 100px;
+        z-index: 1;
     }
 
     .Container {
-        width: 300px;
-        top: 150px;
+        width: 270px;
+        top: 130px;
     }
 
     .Container label {
@@ -105,8 +106,12 @@
 
     .Container input {
         padding: 5px 0;
-        width: 200px;
-        height: 30px;
+        width: 170px;
+        height: 25px;
     }
 
+}
+
+.Succes {
+    color: #077e0d;
 }
