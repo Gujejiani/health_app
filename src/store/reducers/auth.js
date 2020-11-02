@@ -25,10 +25,11 @@ const auth = (state = initialState, action) => {
 
                 loading: false,
             }
+        // token to null
         case actionTypes.USER_REGISTERED_SUCCES:
             return {
                 ...state,
-                idToken: action.idToken,
+                idToken: null,
                 userId: action.userId,
                 loading: false,
                 isLogined: !action.isLogined,

@@ -115,3 +115,8 @@
 .Succes {
     color: #077e0d;
 }
+
+.Hide {
+    visibility: hidden;
+
+}

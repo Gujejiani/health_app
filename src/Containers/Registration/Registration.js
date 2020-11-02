@@ -252,7 +252,7 @@ class Registration extends Component {
             errorMessage = "Sorry this Email is already Exists, please Sign In"
 
         }
-        if (this.props.token) {
+        if (this.props.userId) {
             errorMessage = <span className={classes.Succes}> {"Registration complited, Please Login"}</span>
         }
 
@@ -261,9 +261,9 @@ class Registration extends Component {
             <div>
                 <Heder />
                 <section className={classes.Section} >
-                    <h1>Please Regiser to join</h1>
+                    <h1 className={this.props.userId ? classes.Hide : null} > Please Regiser to join</h1>
                     <p className={classes.ErorMessage}>{errorMessage} </p>
-                    <div className={classes.Container}  >
+                    <div className={this.props.userId ? classes.Hide : classes.Container}  >
 
                         {form}
 
@@ -286,7 +286,8 @@ const mapStateToProps = state => {
         userInfo: state.reducer.userInfo,
         loading: state.auth.loading,
         token: state.auth.idToken,
-        error: state.auth.error
+        error: state.auth.error,
+        userId: state.auth.userId
     }
 }
 
