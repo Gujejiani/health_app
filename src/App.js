@@ -21,12 +21,14 @@ class App extends Component {
           {this.props.token ? <Route path="/health-app/weight" component={Weight} /> : null}
           {this.props.token ? <Route path="/health-app/activity" component={Activity} /> : null}
           {this.props.token ? <Route path="/health-app/meal" component={Meal} /> : null}
-          <Route path="/health-app/registration" component={Registration} />
+          <Route exact path="/health-app/registration" component={Registration} />
+          <Route exact component={Login} />
           <Route exact path="/health-app/" component={Login} />
-          <Route component={Login} />
+
 
 
         </Switch>
+
 
       </div>
     );

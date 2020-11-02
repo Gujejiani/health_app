@@ -23,7 +23,7 @@ const store = createStore(rootReducer, composeEnhancers(
   applyMiddleware(thunk)
 ));
 const app = (
-  <Provider basename={'https://gujejiani.github.io/health-app/'} store={store} >
+  <Provider basename={'/health-app/'} store={store} >
     <BrowserRouter >
       <App />
     </BrowserRouter>
