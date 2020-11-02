@@ -173,6 +173,8 @@ class Registration extends Component {
             isLogined: !prewState.isLogined
         }))
 
+
+
     }
 
 
@@ -256,7 +258,10 @@ class Registration extends Component {
             errorMessage = <span className={classes.Succes}> {"Registration complited, Please Login"}</span>
         }
 
-
+        setTimeout(() => {
+            console.log('bum')
+            errorMessage = null
+        }, 10)
         return (
             <div>
                 <Heder />

@@ -94,13 +94,14 @@
     }
 
     .Container {
-        width: 270px;
+        width: 280px;
         top: 130px;
+        height: 430px;
     }
 
     .Container label {
         display: block;
-        padding: 10px;
+        padding: 5px;
         color: white;
     }
 
@@ -115,6 +116,26 @@
 .Succes {
     color: #077e0d;
 }
+
+@media screen and (max-width: 330px) {
+
+    .Container input {
+        padding: 5px 0;
+
+    }
+
+    .Container label {
+
+        padding: 4px 0;
+
+    }
+
+    .Container {
+        height: 400px;
+    }
+
+}
+
 
 .Hide {
     visibility: hidden;
