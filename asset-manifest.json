@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/health_app/static/css/main.f83436ac.chunk.css",
+    "main.js": "/health_app/static/js/main.d58494e5.chunk.js",
+    "main.js.map": "/health_app/static/js/main.d58494e5.chunk.js.map",
+    "runtime-main.js": "/health_app/static/js/runtime-main.fd293a26.js",
+    "runtime-main.js.map": "/health_app/static/js/runtime-main.fd293a26.js.map",
+    "static/css/2.95456d05.chunk.css": "/health_app/static/css/2.95456d05.chunk.css",
+    "static/js/2.35fe50e5.chunk.js": "/health_app/static/js/2.35fe50e5.chunk.js",
+    "static/js/2.35fe50e5.chunk.js.map": "/health_app/static/js/2.35fe50e5.chunk.js.map",
+    "index.html": "/health_app/index.html",
+    "static/css/2.95456d05.chunk.css.map": "/health_app/static/css/2.95456d05.chunk.css.map",
+    "static/css/main.f83436ac.chunk.css.map": "/health_app/static/css/main.f83436ac.chunk.css.map",
+    "static/js/2.35fe50e5.chunk.js.LICENSE.txt": "/health_app/static/js/2.35fe50e5.chunk.js.LICENSE.txt",
+    "static/media/can.d5e82e57.JPG": "/health_app/static/media/can.d5e82e57.JPG",
+    "static/media/Activity.module.css": "/health_app/static/media/pexels-daniel-torobekov-4628357.47398a63.jpg",
+    "static/media/Weight.module.css": "/health_app/static/media/pexels-eneida-nieves-1084584.2cbef5ae.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fd293a26.js",
+    "static/css/2.95456d05.chunk.css",
+    "static/js/2.35fe50e5.chunk.js",
+    "static/css/main.f83436ac.chunk.css",
+    "static/js/main.d58494e5.chunk.js"
+  ]
+}
